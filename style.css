@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+  width: 1440px;
+  max-width: 100%;
+  max-height: 100vh;
+  line-height: 1.5;
+}
+nav {
+    margin-top: 25px;
+  padding: 25px;
+  display: flex;
+  justify-content: space-around;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  padding: 0;
+  font-family: "Barlow Condensed", sans-serif;
+}
+nav li {
+  margin-left: 30px;
+  font-weight: 400;
+}
+nav li a {
+  text-decoration: none;
+  list-style-type: none;
+  color: hsl(230, 29%, 20%);
+  text-transform: uppercase;
+}
+nav li a:hover {
+  color: hsl(0, 100%, 68%);
+}
+.login {
+  margin-left: 50px;
+  color: hsl(231, 7%, 65%);
+}
+.container {
+  width: 1100px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 70px 10px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flex > div {
+  flex: 1;
+}
+h1,
+h5 {
+  text-transform: uppercase;
+}
+h5 {
+  letter-spacing: 2px;
+  color: hsl(231, 7%, 65%);
+}
+.black {
+  font-weight: 700;
+  color: hsl(207, 33%, 95%);
+  background-color: hsl(230, 29%, 20%);
+  border-radius: 25px;
+  padding: 5px;
+}
+h1 {
+  font-weight: 700;
+  font-size: 40px;
+  padding-top: 20px;
+}
+p {
+  color: hsl(230, 11%, 40%);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.inline {
+  display: inline-flex;
+  padding-top: 30px;
+}
+.inline h5 {
+  margin-left: 15px;
+padding-top: 10px;
+}
+button {
+  cursor: pointer;
+}
+.red-btn {
+  background-color: hsl(0, 100%, 68%);
+  color: hsl(207, 33%, 95%);
+  padding: 15px 20px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  border: 0.5px solid hsl(231, 7%, 65%);
+  border-radius: 5px;
+}
+.main-img {
+  width: 650px;
+}
+@media screen and (max-width: 687px) {
+    body {
+      text-align: center;
+    }
+  
+    .flex {
+      flex-direction: column;
+    }
+    h1 {
+      font-size: 3em;
+      padding-top: 20px;
+    }
+    .main-img{
+        width: 80%;
+        padding-top: 40px;
+    }
